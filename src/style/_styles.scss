@@ -2,6 +2,7 @@
 $background-header:#F4F6FB;
 //imports files
 @import '_header';
+@import 'Button.module';
 @import '_hero';
 @import '_footer';
 @import '_reset';
@@ -10,5 +11,5 @@ $background-header:#F4F6FB;
 [class*=__container] { 
     width: 100%;
     padding: 0px 10px;
-    margin:0 auto;
+    margin: 0 auto;
 }
