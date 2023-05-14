@@ -1,0 +1,14 @@
+// colors
+$background-header:#F4F6FB;
+//imports files
+@import '_header';
+@import '_hero';
+@import '_footer';
+@import '_reset';
+
+//all classes
+[class*=__container] { 
+    width: 100%;
+    padding: 0px 10px;
+    margin:0 auto;
+}

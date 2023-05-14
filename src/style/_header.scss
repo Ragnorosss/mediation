@@ -1,0 +1,36 @@
+.header {
+    background-color: $background-header;
+    &__container {
+        max-width: 1467px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        width: 100%;
+        max-width: 203px;
+        height: 205px;
+        background-image: url("/assets/logo_white_them.svg");
+        background-repeat: no-repeat;
+    }
+   &__menu {
+    display: flex;
+   }
+}
+
+.menu__list {
+    display: flex;
+   
+}
+
+.list__item{
+    &-link{
+        margin-right: 48px;
+    }
+}
+.reg{
+    display: flex;
+    gap: 20px;
+}
