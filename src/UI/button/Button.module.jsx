@@ -1,7 +1,7 @@
-
-export default function Button(children) {
+import { Children } from "react"
+export default function Button({children}) {
   return (
-    <button className={cstBtn}>
+    <button>
       {children}
     </button>
   )
