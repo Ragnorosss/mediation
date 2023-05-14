@@ -1,7 +1,8 @@
 import Header from "section/Header";
 import Hero from "section/Hero";
 import Footer from "section/Footer";
-import "style/reset.scss"
+import "style/_styles.scss"
+
 function App() {
   return (
     <div className="App">
