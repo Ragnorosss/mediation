@@ -20,11 +20,13 @@ export default function Header() {
                 <a className='list__item-link' href="#">Контакти</a>
               </li>
             </ul>
-            <div className="reg">
+          </nav>
+          <div className="reg">
               <Button>Стати автором</Button>
               <Button>Увійти</Button>
             </div>
-          </nav>
+            <button className="change__them"></button>
+
         </div>
       </div>
     </header>
