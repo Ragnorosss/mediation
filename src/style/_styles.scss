@@ -6,10 +6,10 @@ $without-hover-btn:#3C64B1;
 //imports files
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter:wght@400;500;700&family=Mulish:wght@400;500;600;700;800&family=Poppins:wght@400;600&display=swap');
 @import '_header';
-@import 'Button.module';
 @import '_hero';
 @import '_footer';
 @import '_reset';
+@import 'Button.module';
 
 //all classes
 [class*=__container] { 
