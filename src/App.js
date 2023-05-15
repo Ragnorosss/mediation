@@ -1,10 +1,10 @@
-import Catalog from "pages/Main";
+import Main from "pages/Main";
 import "style/_styles.scss"
 
 function App() {
     return (
         <div className="App">
-            <Catalog />
+            <Main />
         </div>
     );
 }
