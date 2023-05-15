@@ -1,4 +1,5 @@
 .header {
+    font-family: 'Mulish';
     background-color: $background-header;
     &__container {
         max-width: 1467px;
@@ -29,6 +30,7 @@
 
 .list__item{
     &-link{
+        font-weight: 800;
         margin-right: 48px;
     }
 }
