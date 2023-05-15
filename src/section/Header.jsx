@@ -26,7 +26,6 @@ export default function Header() {
               <Button>Увійти</Button>
             </div>
             <button className="change__them"></button>
-
         </div>
       </div>
     </header>
