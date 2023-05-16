@@ -20,7 +20,7 @@
 
     &__info-title {
         font-weight: 700;
-        font-size: 44px;
+        font-size: $font-size-title-big;
         line-height: 127%;
         letter-spacing: 0.2px;
         color: $default-color;
@@ -31,7 +31,7 @@
 
     &__info-subtitle {
         font-weight: 400;
-        font-size: 16px;
+        font-size: $font-size-subtitle;
         line-height: 138%;
         letter-spacing: 0.3px;
         color: $subtitle-color;
@@ -39,15 +39,14 @@
     }
 }
 .donate {
-    >button{
-        padding:15px 18px;
-        
-    }
+
     a{
-        color: $without-hover-btn;
-    }
-    >button:first-child{
+        color: $without-hover-color;
+        padding:15px 18px;
         margin-right: 24px;
+        border: 1px solid #3C64B1;
+        border-radius: 12px;
+        font-weight: 700;
+        @include hover-effect;
     }
-    
 }

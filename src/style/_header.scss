@@ -33,6 +33,10 @@
         font-weight: 800;
         margin-right: 48px;
         color: $default-color;
+        font-size: $font-size-link;
+        &:hover{
+            color: #3C64B1;
+        }
     }
 }
 .reg{
