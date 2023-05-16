@@ -1,0 +1,52 @@
+.hero {
+    margin-top: 79px;
+    font-family: 'Mulish';
+    // .hero__container
+
+    &__container {
+        max-width: 1286px;
+    }
+
+    // .hero__wrapper
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    // .hero__info-title
+
+    &__info-title {
+        font-weight: 700;
+        font-size: $font-size-title-big;
+        line-height: 127%;
+        letter-spacing: 0.2px;
+        color: $default-color;
+        margin-bottom: 40px;
+    }
+
+    // .hero__info-subtitle
+
+    &__info-subtitle {
+        font-weight: 400;
+        font-size: $font-size-subtitle;
+        line-height: 138%;
+        letter-spacing: 0.3px;
+        color: $subtitle-color;
+        margin-bottom: 43px;
+    }
+}
+.donate {
+
+    a{
+        color: $without-hover-color;
+        padding:15px 18px;
+        margin-right: 24px;
+        border: 1px solid #3C64B1;
+        border-radius: 12px;
+        font-weight: 700;
+        @include hover-effect;
+    }
+}
