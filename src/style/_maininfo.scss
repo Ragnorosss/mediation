@@ -3,15 +3,13 @@
 .wrapper{
     display: flex;
     justify-content: space-around;
-    width: 1600px;
+    width: 1467px;
     height: 500px;
     margin: 1% auto;
 }
 
 /* information-basic*/
 .main__wrapper{
-    width: 300px;
-
     .logo-avatar{
         width: 200px;
         height: 200px;
@@ -140,3 +138,20 @@
     }
 }
 /* Videos end */
+
+/* block-line start */
+.block-line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    .line{
+        width: 1467px;
+        height: 1px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.15);
+        background-color: #DBDBDB;
+    }
+}
+/* block-line end */
