@@ -1,13 +1,12 @@
-import About from "pages/About";
 import "style/_styles.scss"
+import Main from "pages/Main"
 
 function App() {
-  
-  return (
-    <div className="App">
-      <About/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Main />
+        </div>
+    );
 }
 
 export default App;
