@@ -1,7 +1,71 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Avatar from "../assets/avatar.svg"
 
 export default function MainInfo() {
+
+    /* для блока Період */
+    const [isOpen, setIsOpen] = useState(false);
+    const [selectedOption, setSelectedOption] = useState('');
+
+    const options = [
+        '90-ті',
+        '1998-2004',
+        '2004-2010',
+        '2010-2014',
+    ];
+
+    const handleToggle = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const handleOptionSelect = (option) => {
+        setSelectedOption(option);
+        setIsOpen(false);
+    };
+    /* для блока Період */
+
+    /* для блока тема 3*/
+    const [openTemaThree, setOpenTemaThree] = useState(false);
+    const [showTemaThree, setShowTemaThree] = useState('');
+
+    const temaItemThree = [
+        'Тема 3',
+        'Тема 3',
+        'Тема 3',
+        'Тема 3',
+    ];
+
+    const showItemLi = () => {
+        setOpenTemaThree(!openTemaThree);
+    };
+
+    const handleTemaSelect = (temaThree) => {
+        setShowTemaThree(temaThree);
+        setOpenTemaThree(false);
+    };
+    /* для блока тема 3 */
+
+    /* для блока тема 2*/
+    const [openTemaTwo, setOpenTemaTwo] = useState(false);
+    const [showTemaTwo, setShowTemaTwo] = useState('');
+
+    const temaItemTwo = [
+        'Тема 2',
+        'Тема 2',
+        'Тема 2',
+        'Тема 2',
+    ];
+
+    const showItemTwoo = () => {
+        setOpenTemaTwo(!openTemaTwo);
+    };
+
+    const handleTemaTwo = (temaTwo) => {
+        setShowTemaTwo(temaTwo);
+        setOpenTemaTwo(false);
+    };
+    /* для блока тема 2 */
+
     return (
         <section className="main">
             <div className="wrapper">
@@ -96,15 +160,71 @@ export default function MainInfo() {
                             <p className='text-article-creat'>наразі стаття редагується</p>
                         </div>
                         <div className="title-article-aside">
-                            <p>Назва статті</p>
-                            <div className="item-subject">
-                                <p>додати тему</p>
+                            <p className='text-name-article'>Назва статті</p>
+                            <div className="item-subject-show">
+                                <div className="dropdown">
+                                    <div className="dropdown__selected" onClick={handleToggle}>
+                                        {selectedOption || 'Період'}
+                                    </div>
+                                    {isOpen && (
+                                        <ul className="dropdown__options">
+                                        {options.map((option, index) => (
+                                            <li
+                                            key={index}
+                                            className="dropdown__option"
+                                            onClick={() => handleTemaSelect(option)}
+                                            >
+                                            {option}
+                                            </li>
+                                        ))}
+                                        </ul>
+                                    )}
+                                </div>
+                                <div className="dropdown">
+                                    <div className="dropdown__selected" onClick={showItemTwoo}>
+                                        {showTemaTwo || 'Тема 2'}
+                                    </div>
+                                    {openTemaTwo && (
+                                        <ul className="dropdown__options">
+                                        {temaItemTwo.map((temaTwo, index) => (
+                                            <li
+                                            key={index}
+                                            className="dropdown__option"
+                                            onClick={() => handleTemaTwo(temaTwo)}
+                                            >
+                                            {temaTwo}
+                                            </li>
+                                        ))}
+                                        </ul>
+                                    )}
+                                </div>
+                                <div className="dropdown">
+                                    <div className="dropdown__selected" onClick={showItemLi}>
+                                        {showTemaThree || 'Тема 3'}
+                                    </div>
+                                    {openTemaThree && (
+                                        <ul className="dropdown__options">
+                                        {temaItemThree.map((temaThree, index) => (
+                                            <li
+                                            key={index}
+                                            className="dropdown__option"
+                                            onClick={() => handleOptionSelect(temaThree)}
+                                            >
+                                            {temaThree}
+                                            </li>
+                                        ))}
+                                        </ul>
+                                    )}
+                                </div>
+                                <p className='text-article-creat'>додати тему</p>
                             </div>
                         </div>
                         <div className="articl-block-info">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            <p className='text-articl-info text-info'>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
                         </div>
                         <div className="btn-block-created">
                             <div className="btn-block-start">
