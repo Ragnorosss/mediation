@@ -401,7 +401,130 @@
                     color: #3C64B1;
                 }
             }
-            
+            .title-article-aside{
+                display: flex;
+                width: 420px;
+                height: 35px;
+                .text-name-article{
+                    width: 152px;
+                    height: 35px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 33px;
+                    color: #333333;
+                }
+                .text-article-creat{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #3C64B1;
+                    cursor: pointer;
+                }
+                .item-subject-show{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: auto;
+                    width: 248px;
+                    height: 20px;
+                    .dropdown{
+                        width: 46px;
+                        height: 20px;
+                        z-index: 1;
+                        position: relative;
+                        .dropdown__selected{
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 20px;
+                            color: rgba(0, 0, 0, 0.5);
+                            cursor: pointer;
+                        }
+                        .dropdown__options{
+                            width: 105px;
+                            height: 121px;
+                            padding: 0;
+                            margin: 0;
+                            top: 100%;
+                            left: 31%;
+                            transform: translateX(-31%);
+                            border-top: none;
+                            list-style-type: none;
+                            background: #D9D9D9;
+                            border-radius: 2px;
+                            z-index: 2
+                        }
+                        .dropdown__option{
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 20px;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            justify-content: center;
+                            width: 105px;
+                            height: 20px;
+                            color: rgba(0, 0, 0, 0.5);
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .articl-block-info{
+                    width: 936px;
+                    height: 96px;
+                    /*
+                    .text-info{
+                        box-sizing: border-box;
+                        position: absolute;
+                        width: 936px;
+                        height: 96px;
+                        padding: 66px 0 0 0;
+                        background: #FFFFFF;
+                        border: 1px solid #000000;
+                        border-radius: 12px;
+                    }
+                    .text-articl-info{
+                        font-family: 'IBM Plex Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 26px;
+                        letter-spacing: 0.1px;
+                        align-items: center;
+                        padding: 0.5% 3% 0 3%;
+                        justify-content: center;
+                        color: #333333;
+                    }
+                    
+                    .text-info{
+                        box-sizing: border-box;
+                        width: 936px;
+                        height: 95px;
+                        background: #FFFFFF;
+                        border: 1px solid #000000;
+                        border-radius: 12px;
+                    }
+                    .text-articl-info{
+                        font-family: 'Mulish';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 120%;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.06em;
+                        color: #333333;
+                    }
+                    */
+                }
+            }
             /* block btn 2 start */
             .btn-block-created{
                 display: flex;
@@ -422,7 +545,6 @@
                         align-items: flex-start;
                         padding: 17px 23px;
                         gap: 10px;
-                        width: 231px;
                         height: 59px;
                         background: #3C64B1;
                         border-radius: 20px;
@@ -467,7 +589,6 @@
                         color: #FFFFFF;
                     }
                 }
-
                 .btn-deleted{
                     box-sizing: border-box;
                     display: flex;
@@ -500,4 +621,5 @@
         /* card-urticle-editinig end*/
     }
 }
+
 /* mine article end */
