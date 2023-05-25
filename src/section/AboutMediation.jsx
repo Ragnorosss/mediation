@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Card from "UI/card/Card";
 
-export default function History() {
+export default function AboutMediation() {
   
   const [items, setitems] = useState ([1,2,3,4,5,6]) 
 
