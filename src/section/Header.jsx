@@ -4,7 +4,7 @@ export default function Header() {
     <header className='header'>
       <div className="header__container">
         <div className="header__wrapper">
-          <a href="#" className="header__logo"></a>
+          <a href="/" className="header__logo"></a>
           <nav className="header__menu">
             <ul className="menu__list">
               <li className="list__item">

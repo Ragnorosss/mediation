@@ -4,6 +4,7 @@ $default-color:#373F41;
 $subtitle-color:#737B7D;
 $without-hover-color:#3C64B1;
 //font size
+$font-size-title-small:24px;
 $font-size-title:32px;
 $font-size-title-big:44px;
 $font-size-subtitle:16px;
@@ -24,6 +25,7 @@ $font-size-link:18px;
 @import '_header';
 @import '_hero';
 @import '_aboutMediation';
+@import '_aboutProject';
 @import '_footer';
 @import '_reset';
 @import '_card';

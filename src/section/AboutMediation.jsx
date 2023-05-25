@@ -3,26 +3,19 @@ import Card from "UI/card/Card";
 
 export default function AboutMediation() {
   
-  const [items, setitems] = useState ([1,2,3,4,5,6]) 
 
   const cardContent = [
-    {id:1,title:'1990 - 1998',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
-    {id:2,title:'2003 - 2010',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
-    {id:3,title:'2010 - 2014',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
-    {id:4,title:'2014 - зараз',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
+    {id:1,header:'Періоди медиації', title:'1990 - 1998',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
+    {id:3,header:'Про проект', title:'2010 - 2014',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
+    {id:2,header:'Про медиацію', title:'2003 - 2010',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
+    {id:4,header:'Цілі медиації', title:'2014 - зараз',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
   ]
-  const titelCard = [
-    {title:'Періоди медиації',id:1, idPage:1,imgNext:'', imgPrev:''},
-    {title:'Про проект',id:2, idPage:2,imgNext:'', imgPrev:''},
-    {title:'Про медиацію',id:3, idPage:3,imgNext:'', imgPrev:''},
-    {title:'Цілі медиації',id:4, idPage:4,imgNext:'', imgPrev:''},
-  ]
+ 
   return (
     <section className="about">
-      <h1 className="about__title"></h1>
       <div className="slider">
         <div className="slider__wrapper">
-          <Card cardContent={cardContent} titelCard={titelCard}/>
+          <Card cardContent={cardContent}/>
         </div>
         <nav className="slider__nav">
           <ul className="slider__nav-menu">
