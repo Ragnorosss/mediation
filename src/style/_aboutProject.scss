@@ -1,0 +1,71 @@
+.about-projects {
+    font-family: Mulish;
+    margin:63px 0 85px 0;
+
+}
+.about-project {
+
+		// .about-project__container
+
+		&__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+		}
+
+		// .about-project__title
+
+		&__title {
+            font-size: $font-size-title;
+            color: $without-hover-color;
+            font-weight: 700;
+            margin-bottom: 36px;
+		}
+        &__video{
+            width: 100%;
+            max-width: 1082px;
+            height: 497px;
+            border-radius: 36px;
+            margin-bottom: 47px;
+        }
+		// .about-project__subtitle
+
+		&__subtitle {
+            width: 100%;
+            max-width: 652px;
+            font-size: $font-size-title;
+            margin: 0 auto;
+            font-weight: 700;
+		}
+
+		// .about-project__link
+
+		&__link {
+
+            border: 1px solid $without-hover-color;
+            color: $without-hover-color;
+            border-radius: 12px;
+            font-weight: 700;
+            &:first-child{
+                padding: 15px 18px;
+            }
+            &:last-child{
+                padding: 17px 18px;
+            }
+            &:hover{
+                color: #fff;
+                background-color: $without-hover-color;
+            }
+		}
+}
+.about-project-btn {
+		// .about-project-btn__wrapper
+
+		&__wrapper {
+            display: flex;
+            gap: 91px;
+            margin-top: 62px;
+        }
+}
