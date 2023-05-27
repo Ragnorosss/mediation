@@ -24,6 +24,27 @@ export default function MainInfo() {
     };
     /* для блока Період */
 
+    /* для блока тема 2*/
+    const [openTemaTwo, setOpenTemaTwo] = useState(false);
+    const [showTemaTwo, setShowTemaTwo] = useState('');
+
+    const temaItemTwo = [
+        'Тема 2',
+        'Тема 2',
+        'Тема 2',
+        'Тема 2',
+    ];
+
+    const showItemTwoo = () => {
+        setOpenTemaTwo(!openTemaTwo);
+    };
+
+    const handleTemaTwo = (temaTwo) => {
+        setShowTemaTwo(temaTwo);
+        setOpenTemaTwo(false);
+    };
+    /* для блока тема 2 */
+
     /* для блока тема 3*/
     const [openTemaThree, setOpenTemaThree] = useState(false);
     const [showTemaThree, setShowTemaThree] = useState('');
@@ -45,26 +66,11 @@ export default function MainInfo() {
     };
     /* для блока тема 3 */
 
-    /* для блока тема 2*/
-    const [openTemaTwo, setOpenTemaTwo] = useState(false);
-    const [showTemaTwo, setShowTemaTwo] = useState('');
+    const [activeItem, setActiveItem] = useState(null);
 
-    const temaItemTwo = [
-        'Тема 2',
-        'Тема 2',
-        'Тема 2',
-        'Тема 2',
-    ];
-
-    const showItemTwoo = () => {
-        setOpenTemaTwo(!openTemaTwo);
+    const handleItemClick = (index) => {
+      setActiveItem(index);
     };
-
-    const handleTemaTwo = (temaTwo) => {
-        setShowTemaTwo(temaTwo);
-        setOpenTemaTwo(false);
-    };
-    /* для блока тема 2 */
 
     return (
         <section className="main">
@@ -102,7 +108,7 @@ export default function MainInfo() {
             <div className="block-video">
                 <div className="video-wrapper">
                     <div className="video-item"></div>
-                    <iframe className='video__element' src="https://www.youtube.com/embed/oXW4cnKCzsM" 
+                    <iframe className='video__element' src="" 
                     frameborder="1" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
@@ -113,14 +119,12 @@ export default function MainInfo() {
                 <div className="line"></div>
             </div>
 
-            <br/>
-            <br/>
-            <br/>
-
             {/* mine article */}
             <div className="main-article">
                 <div className="article-wrapper">
-                    <p className='text-article'>Мої статтi:</p>
+                    <div className="title-text-article">
+                        <p className='text-article'>Мої статтi:</p>
+                    </div>
                     <input className="search-input text-input" placeholder='Введiть назву статтi для пошуку'/>
                     <div className="card-urticle-new">
                         <div className="section-info">
@@ -150,8 +154,6 @@ export default function MainInfo() {
                             <button className='btn-create text-btn-create'>Змінити</button>
                         </div>
                     </div>
-
-                    <br/>
 
                     <div className="card-urticle-editinig">
                         <div className="section-info-2">
@@ -220,7 +222,7 @@ export default function MainInfo() {
                             </div>
                         </div>
                         <div className="articl-block-info">
-                            <p className='text-articl-info text-info'>
+                            <p className='text-articl-info'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -235,23 +237,42 @@ export default function MainInfo() {
                         </div>
                     </div>
 
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-
                     <div className="paginator">
-                        <div className="">
-                            <p>Назад</p>
-                            <div className="">
-                                <ul>
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                </ul>
+                        <div className="container">
+                            <div className="text-come-back">
+                                <p className="text-back ">Назад</p>
                             </div>
-                            <p>Вперед</p>
+                            <div className="list-container">
+                            <ul className="list-item">
+                                <li
+                                className={`item ${activeItem === 1 ? 'active' : ''}`}
+                                onClick={() => handleItemClick(1)}
+                                >
+                                    1
+                                </li>
+                                <li
+                                className={`item ${activeItem === 2 ? 'active' : ''}`}
+                                onClick={() => handleItemClick(2)}
+                                >
+                                2
+                                </li>
+                                <li
+                                className={`item ${activeItem === 3 ? 'active' : ''}`}
+                                onClick={() => handleItemClick(3)}
+                                >
+                                3
+                                </li>
+                                <li
+                                className={`item ${activeItem === 4 ? 'active' : ''}`}
+                                onClick={() => handleItemClick(4)}
+                                >
+                                4
+                                </li>
+                            </ul>
+                            </div>
+                            <div className="text-forward-go">
+                                <p className='text-forward'>Вперед</p>
+                            </div>
                         </div>
                     </div>
                 </div>
