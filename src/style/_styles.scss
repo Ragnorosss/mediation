@@ -30,6 +30,8 @@ $font-size-link:18px;
 @import '_reset';
 @import '_card';
 
+@import"_maininfo";
+
 //all classes
 [class*=__container] { 
     width: 100%;
