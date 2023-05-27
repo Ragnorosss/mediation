@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import Avatar from "../assets/avatar.svg"
-
+import { useState } from 'react'
+import Avatar from "assets/avatar.svg"
+import Button from 'UI/button/Button.module';
 export default function MainInfo() {
 
     /* для блока Період */
@@ -85,7 +85,7 @@ export default function MainInfo() {
                         <h1 className='title-text'>Квалiфiкацiя</h1>
                         <p className='title-subtitle-profesion'>Профеciйний медiатор</p>
                     </div>
-                    <button className='btn-text btn-create'>Змінити особисту інформацію</button>
+                    <Button className='btn-text btn-create'>Змінити особисту інформацію</Button>
                 </div>
                 <div className='biogrfi__wrapper'>
                     <h1 className='title-text-biogrfi'>Біографiя</h1>
@@ -230,10 +230,10 @@ export default function MainInfo() {
                         </div>
                         <div className="btn-block-created">
                             <div className="btn-block-start">
-                                <button className='text-btn-attach btn-attach'>Прикріпити файли</button>
-                                <button className='text-btn-saved btn-saved'>Зберегти</button>
+                                <Button className='text-btn-attach btn-attach'>Прикріпити файли</Button>
+                                <Button className='text-btn-saved btn-saved'>Зберегти</Button>
+                                <Button className='text-btn-deleted btn-deleted'>Видалити статтю</Button>
                             </div>
-                            <button className='text-btn-deleted btn-deleted'>Видалити статтю</button>
                         </div>
                     </div>
 
