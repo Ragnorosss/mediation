@@ -5,17 +5,32 @@ export default function AboutMediation() {
   
 
   const cardContent = [
-    {id:1,header:'Періоди медиації', title:'1990 - 1998',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
-    {id:3,header:'Про проект', title:'2010 - 2014',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
-    {id:2,header:'Про медиацію', title:'2003 - 2010',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
-    {id:4,header:'Цілі медиації', title:'2014 - зараз',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
+    {id:1, title:'1990 - 1998',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
+    {id:3, title:'2010 - 2014',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
+    {id:2, title:'2003 - 2010',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
+    {id:4, title:'2014 - зараз',subtitle:'Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.',linktext:'more'},
   ]
  
   return (
     <section className="about">
       <div className="slider">
         <div className="slider__wrapper">
-          <Card cardContent={cardContent}/>
+          <div className="slider__item">
+            <h1 className="slider__item-title">Періоди медиації</h1>
+            <Card cardContent={cardContent}/>
+          </div>
+          {/* <div className="slider__item">
+            <h1 className="slider__item-title">Про проект</h1>
+            <Card cardContent={cardContent}/>
+          </div>
+          <div className="slider__item">
+            <h1 className="slider__item-title">Про медиацію</h1>
+            <Card cardContent={cardContent}/>
+          </div>
+          <div className="slider__item">
+            <h1 className="slider__item-title">Цілі медиації</h1>
+            <Card cardContent={cardContent}/>
+          </div> */}
         </div>
         <nav className="slider__nav">
           <ul className="slider__nav-menu">
