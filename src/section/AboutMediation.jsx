@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Card from "UI/card/Card";
-
+import arrowLeft from 'assets/arrow-left-black.png'
+import arrowRight from 'assets/arrow-right-black.png'
 export default function AboutMediation() {
   
 
@@ -47,8 +48,8 @@ export default function AboutMediation() {
               <a className="menu_item-link">4</a>
             </li>
           </ul>
-          <img src="/" alt="<" className="prevHandler slider__img" />
-          <img src="/" alt=">" className="nextHandler slider__img" />
+          <img src={arrowLeft} alt="<" className="prevHandler slider__img" />
+          <img src={arrowRight} alt=">" className="nextHandler slider__img" />
         </nav>
       </div>      
     </section>
