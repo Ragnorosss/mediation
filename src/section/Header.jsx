@@ -1,23 +1,26 @@
+import { Link} from "react-router-dom"
 import Button from "UI/button/Button.module"
 export default function Header() {
   return (
+    <>
+   
     <header className='header'>
       <div className="header__container">
         <div className="header__wrapper">
-          <a href="/" className="header__logo"></a>
+          <Link to="/" className="header__logo"></Link>
           <nav className="header__menu">
             <ul className="menu__list">
               <li className="list__item">
-                <a  className='list__item-link' href="#">Головна</a>
+                <Link  className='list__item-link' to="/">Головна</Link>
               </li>
               <li className="list__item">
-                <a className='list__item-link' href="#">Спогади</a>
+                <Link className='list__item-link' to="/main">Спогади</Link>
               </li>
               <li className="list__item">
-                <a className='list__item-link' href="#">Бібліотека</a>
+                <Link className='list__item-link' to="#">Бібліотека</Link>
               </li>
               <li className="list__item">
-                <a className='list__item-link' href="#">Контакти</a>
+                <Link className='list__item-link' to="#">Контакти</Link>
               </li>
             </ul>
           </nav>
@@ -29,5 +32,6 @@ export default function Header() {
         </div>
       </div>
     </header>
+    </>
   )
 }
