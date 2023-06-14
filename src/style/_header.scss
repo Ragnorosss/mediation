@@ -9,13 +9,7 @@
         justify-content: space-evenly;
         align-items: center;
     }
-    &__logo{
-        width: 100%;
-        max-width: 203px;
-        height: 88px;
-        background-image: url("/assets/logo_white_them.svg");
-        background-repeat: no-repeat;
-    }
+    
    &__menu {
     display: flex;
    }

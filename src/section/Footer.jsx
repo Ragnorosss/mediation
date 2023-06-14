@@ -2,7 +2,7 @@ import facebook from 'assets/facebook.svg'
 import youtube from 'assets/youtube.svg'
 export default function Footer() {
   return (
-    <section className='footer'>
+    <footer className='footer'>
       <div className="footer__container">
         <nav className="footer__nav">
           <div className="contacts">
@@ -38,6 +38,6 @@ export default function Footer() {
         </nav>
         <p className='copyright'>©   BrandName. All rights reserved.</p>
       </div>
-    </section>
+    </footer>
   )
 }
