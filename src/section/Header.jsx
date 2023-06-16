@@ -1,26 +1,28 @@
 import Button from "UI/button/Button.module"
 import logoImg from 'assets/logo_white_them.svg'
+import { Link } from "react-router-dom"
+
 export default function Header() {
   return (
     <header className="header">
       <div className="header__container">
         <div className="header__wrapper">
-          <a className="header__logo" href='/'>
-              <img src={logoImg} alt="" />
+          <a className="header__logo" >
+              <img src={logoImg} alt=""/>
           </a>
           <nav className="header__menu">
             <ul className="menu__list">
               <li className="list__item">
-                <a  className='list__item-link' href='/'>Головна</a>
+                <Link  className='list__item-link' to='/'>Головна</Link>
               </li>
               <li className="list__item">
-                <a className='list__item-link' href='/'>Спогади</a>
+                <Link className='list__item-link' to='/main'>Спогади</Link>
               </li>
               <li className="list__item">
-                <a className='list__item-link' href='/'>Бібліотека</a>
+                <Link className='list__item-link' to='/library'>Бібліотека</Link>
               </li>
               <li className="list__item">
-                <a className='list__item-link'  href='/'>Контакти</a>
+                <Link className='list__item-link'  href='/'>Контакти</Link>
               </li>
             </ul>
           </nav>

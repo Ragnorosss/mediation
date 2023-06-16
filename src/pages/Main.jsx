@@ -1,14 +1,12 @@
-import React from 'react'
-import Footer from 'section/Footer'
-import Header from 'section/Header'
+import { Routes,Route } from "react-router-dom"
 import MainInfo from 'section/Maininfo'
 
 export default function Main() {
 	return (
     	<>
-        	<Header />
-        	<MainInfo/>
-			<Footer/>
+        	 <Routes>
+        		<Route path ='*/main' element={<MainInfo/>}/>
+      		</Routes>
     	</>
   )
 }
