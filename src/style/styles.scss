@@ -10,6 +10,7 @@ $font-size-title-big:44px;
 $font-size-subtitle:16px;
 $font-size-subtitle-small:12px;
 $font-size-link:18px;
+
 //import fonts 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter:wght@400;500;700&family=Mulish:wght@400;500;600;700;800&family=Poppins:wght@400;600&display=swap');
 //mixin
@@ -29,7 +30,6 @@ $font-size-link:18px;
 @import '_footer';
 @import '_reset';
 @import '_card';
-@import '_maininfo';
 
 //all classes
 [class*=__container] { 

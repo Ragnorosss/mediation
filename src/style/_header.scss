@@ -1,13 +1,20 @@
 .header {
+    position: relative;
     font-family: 'Mulish';
-    background-color: $background-header;
+    
     &__container {
         max-width: 1467px;
     }
     &__wrapper {
+        position: fixed;
+        width: 100%;
+        top:0;
+        left: 0;
+        z-index: 1;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        background-color: $background-header;
     }
     
    &__menu {

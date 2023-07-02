@@ -1,6 +1,7 @@
 import Button from "UI/button/Button.module"
 import logoImg from 'assets/logo_white_them.svg'
 import { Link } from "react-router-dom"
+import { srcPath } from "routing/navigated/NavigatedSrc"
 
 export default function Header() {
   return (
@@ -15,16 +16,15 @@ export default function Header() {
           <nav className="header__menu">
             <ul className="menu__list">
               <li className="list__item">
-                <Link  className='list__item-link' to="/">Головна</Link>
+                <Link  className='list__item-link' to={srcPath.toHome}>Головна</Link>
               </li>
               <li className="list__item">
-                <Link className='list__item-link' to="/main">Спогади</Link>
+                <Link className='list__item-link' to={srcPath.toPersArea}>Спогади</Link>
               </li>
               <li className="list__item">
-                <Link className='list__item-link' to="#">Бібліотека</Link>
+                <Link className='list__item-link' to={srcPath.toLibrary}>Бібліотека</Link>
               </li>
               <li className="list__item">
-                <Link className='list__item-link' to="#">Контакти</Link>
               </li>
             </ul>
           </nav>

@@ -1,10 +1,4 @@
+const { RouterProvider } = require("react-router-dom");
+const { router } = require("routing/routers");
 
-function App() {
-    return (
-        <div className="App">
-           
-        </div>
-    );
-}
-    
-export default App;
+export const App = () => <RouterProvider router={router}/>
