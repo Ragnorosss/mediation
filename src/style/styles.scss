@@ -1,20 +1,4 @@
-// colors
-$background-header:#F4F6FB;
-$default-color:#373F41;
-$subtitle-color:#737B7D;
-$without-hover-color:#3C64B1;
-//font size
-$font-size-title-small:24px;
-$font-size-title:32px;
-$font-size-title-big:44px;
-$font-size-subtitle:16px;
-$font-size-subtitle-small:12px;
-$font-size-link:18px;
-
-//import fonts 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter:wght@400;500;700&family=Mulish:wght@400;500;600;700;800&family=Poppins:wght@400;600&display=swap');
 //mixin
-
 @mixin hover-effect { 
     &:hover{
         color: #fff;
@@ -22,7 +6,6 @@ $font-size-link:18px;
     }
 }
 //imports files
-
 @import '_header';
 @import '_hero';
 @import '_aboutMediation';
@@ -30,6 +13,8 @@ $font-size-link:18px;
 @import '_footer';
 @import '_reset';
 @import '_card';
+@import '_errorPage';
+@import 'style/_libraryPage.scss';
 
 //all classes
 [class*=__container] { 

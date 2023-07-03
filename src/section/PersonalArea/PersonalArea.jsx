@@ -1,1 +1,8 @@
-export const PersonalArea = () => <h1>Personal Area</h1>
+export const PersonalArea = () => {
+    return (
+        <main>
+            <section ></section>
+        </main>
+
+        )
+}

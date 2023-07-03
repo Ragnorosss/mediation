@@ -1,16 +1,16 @@
-import { Pagination } from 'UI/pagination/Pagination'
-import { Search } from 'UI/search/Search'
 import React from 'react'
-
-import { Aside } from 'section/librarysection/Aside'
+import { Pagination } from 'UI/pagination/Pagination'
+import { Aside } from 'UI/aside/Aside'
+import { Search } from 'UI/search/Search'
 
 export const LibraryPage = () => {
   return (
-    <div>
-      <Aside/>
-      <Search/>
-      <Pagination/>
-    </div>
+    <main className='library__main'>
+      <section className='library__section'>
+        <Aside/>
+        <Search/>
+        <Pagination/>
+      </section>
+    </main>
   )
 }
-

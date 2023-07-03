@@ -1,0 +1,39 @@
+@import '/src/style/fonts';
+@import '/src/style/colors';
+
+.errorpage {
+    font-family: 'Mulish';
+    position: relative;
+    // .errorpage__container
+
+    &__wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+    }
+
+    // .errorpage__title
+
+    &__title {
+        text-align: center;
+        font-size: $font-size-title-big;
+        color: $default-color-text;
+    }
+
+    // .errorpage__subtitle
+
+    &__subtitle {
+        font-size: $font-size-subtitle;
+        margin-top: 40px;
+    }
+
+    // .errorpage__info
+
+    &__info {
+        margin-top: 40px;
+    }
+    &__link{
+        color: $without-hover-color;
+    }
+}
