@@ -15,7 +15,9 @@
 @import '_card';
 @import '_errorPage';
 @import 'style/_libraryPage.scss';
-
+@import '/src/UI/aside/aside.scss';
+@import '/src/UI/pagination/pagintaion.scss';
+@import '/src/UI/search/search.scss';
 //all classes
 [class*=__container] { 
     width: 100%;

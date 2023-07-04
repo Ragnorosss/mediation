@@ -1,0 +1,47 @@
+@import '/src/style/fonts';
+@import '/src/style/colors';
+
+.pagination {
+
+    // .pagination__wrapper
+
+    &__wrapper {
+        width: 100%;
+        max-width: 995px;
+        padding: 12px 62px;
+        margin: 44px auto;
+        display: flex;
+        align-items: center;
+        gap: 259px;
+        border-radius: 12px;
+        background-color:$background-header;
+        box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.25);
+        > button {
+            border: none;
+            background: transparent;
+        }
+    }
+
+    // .pagination__btn-prev
+
+    &__btn-prev {
+    }
+
+    // .pagination__list
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    // .pagination__list-item
+
+    &__list-item {
+    }
+
+    // .pagination__btn-next
+
+    &__btn-next {
+    }
+    
+}

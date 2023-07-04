@@ -1,7 +1,4 @@
-import React from 'react'
-
-
-export const Chekbox = () => {
+export const ChekboxList = () => {
 
   const filterThems = {
     periods: 'перiодами',
@@ -73,7 +70,6 @@ export const Chekbox = () => {
             <label htmlFor="html">{thems.them}</label>
           </div>
         )}
-
         <h2>{filterThems.periods}</h2>
         {periodsLabel.map(periods =>
           <div key={periods.id}>

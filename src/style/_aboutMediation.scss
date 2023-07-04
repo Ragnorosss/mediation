@@ -10,15 +10,19 @@
 .slider {
     width: 100%;
     max-width: 1107px;
-    position: relative;
     margin: 0 auto;
+    position: relative;
+
     // .slider__wrapper
 
     &__wrapper {
         display: flex;
-
+        position: relative;
+        flex-wrap: wrap;
     }
     &__item {
+        position: absolute;
+        overflow: hidden;
         &-title{
            margin: 33px 0;
            text-align: center;
@@ -48,6 +52,7 @@
     // .menu_item-link
 
     &_item-link {
+ 
     }
 
     // .menu__item
@@ -62,8 +67,11 @@
 .nextHandler{
     top: 75%;
     right: 0;
+    transform: translate(0, -50%);
 }
 .prevHandler{
     top: 75%;
     left: 0;
+    transform: translate(0, -50%);
+
 }
